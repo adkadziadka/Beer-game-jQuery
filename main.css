@@ -1,0 +1,95 @@
+body{
+  background: -moz-linear-gradient(-45deg, #d8e0de 0%, #aebfbc 22%, #99afab 33%, #8ea6a2 50%, #829d98 67%, #4e5c5a 82%, #0e0e0e 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, #d8e0de 0%,#aebfbc 22%,#99afab 33%,#8ea6a2 50%,#829d98 67%,#4e5c5a 82%,#0e0e0e 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, #d8e0de 0%,#aebfbc 22%,#99afab 33%,#8ea6a2 50%,#829d98 67%,#4e5c5a 82%,#0e0e0e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d8e0de', endColorstr='#0e0e0e',GradientType=1 );
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.glass {
+  display: inline-block;
+}
+
+.container {
+  height: auto;
+  margin: 0 auto;
+  overflow: hidden;
+  margin: 50px auto;
+  width: 500px;
+}
+.before1{
+  background-image: url("https://goo.gl/HJj92s");
+  background-repeat: no-repeat;
+  background-size: 170px 230px;
+  position:fixed;
+  bottom:10px;
+  width: 400px;
+  height:300px;
+  opacity: 0.9;
+}
+.after1{
+  background-image: url("https://goo.gl/HJj92s");
+  background-repeat: no-repeat;
+  background-size: 170px 230px;
+  position:fixed;
+  bottom:5px;
+  width: 400px;
+  height:305px;
+  z-index: 2;
+  opacity: 0.3;
+}
+
+#glass1 {
+  position: fixed;
+  bottom: 100px;
+  background-image:url("https://goo.gl/K4EJra");
+  background-position: center;
+  background-size: cover;
+  width: 100px;
+  height: 200px;
+  border-radius: 10px 10px 8px 8px;
+}
+.glass{
+  margin: 10px; 
+}
+#glass2 {
+  position: fixed;
+  bottom: 100px;
+  margin-left: 400px;
+  background-image:url("https://goo.gl/K4EJra");
+  background-position: center;
+  background-size: cover;
+  width: 100px;
+  height: 200px;
+  border-radius: 10px 10px 5px 5px;
+}
+
+.before2{
+  background-image: url("https://goo.gl/HJj92s");
+  background-repeat: no-repeat;
+  background-size: 170px 225px;
+  position:fixed;
+  right: 100px;
+  bottom:10px;
+  width: 400px;
+  height:300px;
+}
+.after2{
+  background-image: url("https://goo.gl/HJj92s");
+  background-repeat: no-repeat;
+  background-size: 170px 225px;
+  position:fixed;
+  bottom:5px;
+  right: 100px;
+  width: 400px;
+  height:305px;
+  z-index: 2;
+  opacity: 0.3;
+}
+
+#restart{
+  width: 100%;
+ }
+  
+
+

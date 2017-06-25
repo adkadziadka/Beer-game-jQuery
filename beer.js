@@ -2,7 +2,8 @@ var drink1 = new Audio();
 drink1.src = "http://res.cloudinary.com/thkodaisseur/video/upload/v1498217715/Swallow_sound_effect_d6ynqn.mp3"
 
 var drink2 = new Audio();
-drink2.src = "http://res.cloudinary.com/thkodaisseur/video/upload/v1498219354/Cartoon_Gulp_Sound_Effect_kahwvs.mp3"
+drink2.src = "http://res.cloudinary.com/thkodaisseur/video/upload/v1498217715/Swallow_sound_effect_d6ynqn.mp3"
+drink2.playbackRate=0.5;
 
 var victory1 = new Audio();
 victory1.src = "http://res.cloudinary.com/thkodaisseur/video/upload/v1498218874/Cartoon_Winning_Sound_Effect_fvt4i5.mp3"
@@ -13,20 +14,22 @@ victory2.src = "http://res.cloudinary.com/thkodaisseur/video/upload/v1498219168/
 $(document).keyup(function(e){
    switch(e.which) {
     case 13:
-       $('#glass1').height('-=10px');
+       $('#glass1').height('-=5px');
        drink1.play();
        if ($('#glass1').height() == 0) {
            victory1.play();
+           victory2.play();
            alert('Player 1 win!');
        };
     break;
     
     case 40:
-       $('#glass2').height('-=10px');
+       $('#glass2').height('-=5px');
        drink2.play();
        if ($('#glass2').height() == 0) {
-           victory2.play();
-           alert('Player 2 win!');
+       		victory1.play();
+          victory2.play();
+          alert('Player 2 win!');
        };
     break;
     default: return;

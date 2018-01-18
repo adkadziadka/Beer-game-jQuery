@@ -37,6 +37,6 @@ $(document).keyup(function(e){
 });
 
 $('#restart').on('click', function(){
-   $('#glass1').height('200px');
-   $('#glass2').height('200px');
+   $('#glass1').height('400px');
+   $('#glass2').height('400px');
 });

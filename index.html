@@ -7,30 +7,45 @@
   <title>The BEER Pong</title>
   <meta name="description" content="">
 
-  <link rel="stylesheet" href="./main.css">
+  <link rel="stylesheet" href="main.css">
  
 
 </head>
-<body>
+  <body>
 
-<div class="container">
-  <section class="buttons">    
-    <button id="restart">NEW GAME</button>
-    <p>Player 1 - <strong>ENTER</strong><br>
-    Player 2 - <strong>ARROW DOWN</strong></p>
-  </section>
-  <div class="before1"></div>
-  <div class="after1"></div>
-  <div class ='glass' id="glass1">      </div>
-    <div class="before2"></div>
-    <div class="after2"></div>
-  <div class ='glass' id="glass2">  </div>
+    <div class="container">
+      <section>    
+        <div class="instruction">
+          <p> Try to drink your beer as fast as you can by clicking keyboard button.
+            <br>
+            Good Luck and stay vertical! <strong>Cheers</strong>! </p>
 
-</div>
+          <div class="col-1">
+            <p>Player 1 - <span class="effect">ENTER</span></p>
+          </div>
+          <div class="col-2">
+            <p>Player 2 - <span class="effect">ARROW DOWN</span></p>
+          </div>
+          <button type="submit" class="btn btn-restart" id="restart">NEW GAME</button>
+        </div>
+      </section>
+      <section class="content">
+        <div class="col-1">
+          <div class="glass back"></div>
+          <div class="glass front"></div>
+          <div class="beer" id="glass1"></div>
+        </div>
+        <div class="col-2">
+          <div class="glass back"></div>
+          <div class="glass front"></div>
+          <div class="beer" id="glass2"></div>
+        </div>
+      </section>
+    </div>
 
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script type="text/javascript" src="beer.js"></script>
-</body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="beer.js"></script>
+  </body>
 
 </body>
 </html>
